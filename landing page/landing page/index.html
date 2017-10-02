@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	
+	<title>Layout</title>
+	
+	<!-- favicon -->
+    <link rel="shortcut icon" href="images/ico/favicon.jpg">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+	
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
+	<link rel="stylesheet" type="text/css" href="css/unslider.css" />
+	<link rel="stylesheet" type="text/css" href="css/template.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	
+</head>
+
+<body data-target="#navbar" data-spy="scroll">
+
+	<!-- Header
+    ================================================== -->
+	<header id="header">
+		<div id="headerInner">					
+			<nav id="navbar" class="navbar navbar-default" role="navigation">
+				<div class="container">
+
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="top" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="homepage.html"><img src="images/logo.png">  </a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="menuItem pull-center">
+						<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#header">Home <span class="sr-only">(current)</span></a></li>
+								<li><a href="#services">Client</a></li>
+								<li><a href="#story">Services</a></li>
+								<li><a href="#portfolio">Stories</a></li>
+								<li><a href="#latestBlog">Contact</a></li>
+								
+							</ul>
+						</div><!-- /.navbar-collapse -->
+						<ul class="iconsGroup nav navbar-nav text-left">
+						<li><a href="#login-form-link">Sign In</a></li>
+						<li><a href="#register-form-link">Register</a></li>
+		
+						</ul>
+					</div>
+				</div><!-- /.container-fluid -->
+			</nav>
+
+			<section id="slider" class="carousel slide container" data-ride="carousel">
+				
+				<!-- Forms -->
+				<div class="container">
+				        <div class="row">
+				        	<div class="col-sm-6">
+								<video width="500" controls>
+								    <source src="video1.mp4" type="video/mp4">
+								    Your browser does not support HTML5 video.
+								  </video>
+							</div>
+							<div class="col-sm-2">
+							<a id="banner" href="images/banner.jpg" onclick="document.getElementById('id01').style.display='block'" style="width: 250px; color: red; "> <button class="btn btn-danger"> Offer </button> </a>
+							<script type="text/javascript">
+								var modal = document.getElementById('#banner');
+
+								// When the user clicks anywhere outside of the modal, close it
+								window.setTimeout = function(event) {
+								    if (event.target == modal) {
+								        modal.style.display = "none";
+								    }
+								}
+							</script>
+							</div>
+							<div class="col-sm-4">
+								<div class="panel panel-login">
+									<div class="panel-heading">
+										<div class="row">
+											<div class="col-sm-12">
+												<a href="#" class="active" id="login-form-link">Make now!</a>
+
+												<br>
+												<a href="#" id="register-form-link">Sign up to make</a>
+
+											</div>
+											
+										
+										</div>
+										<hr>
+									</div>
+									<div class="panel-body">
+										<div class="row">
+											<div class="col-lg-12">
+												<form id="login-form" action="#" method="post" role="form" style="display: block;">
+													<div class="form-group">
+														<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+													</div>
+													<div class="form-group">
+														<input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+													</div>
+													<div class="form-group text-center">
+														<input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+														<label for="remember"> Remember Me</label>
+													</div>
+													<div class="form-group">
+														<div class="row">
+															<div class="col-sm-6 col-sm-offset-3">
+																<input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="row">
+															<div class="col-lg-12">
+																<div class="text-center">
+																	<a href="#" tabindex="5" class="forgot-password">Forgot Password?</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</form>
+												<form id="register-form" action="#" method="post" role="form" style="display: none;">
+													<div class="form-group">
+														<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+													</div>
+													<div class="form-group">
+														<input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+													</div>
+													<div class="form-group">
+														<input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+													</div>
+													<div class="form-group">
+														<input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+													</div>
+													<div class="form-group">
+														<div class="row">
+															<div class="col-sm-6 col-sm-offset-3">
+																<input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Register Now">
+															</div>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <img id="banner" src="images/banner.jpg"> -->
+					
+
+					<div class="row" >
+						<div class="col-sm-12" id="text_animate">
+							<p>Fracktory is the future of </p>
+							<b>
+							  <span1>
+							    creating<br /> 
+							    making<br />
+							    innovating<br />
+							    manufacturing<br />
+							   </span1>
+							</b>
+							<p>is here. </p>
+						</div>
+					</div>
+					<script type="text/javascript">
+						$(function() {
+
+						    $('#login-form-link').click(function(e) {
+						    	$("#login-form").delay(100).fadeIn(100);
+						 		$("#register-form").fadeOut(100);
+								$('#register-form-link').removeClass('active');
+								$(this).addClass('active');
+								e.preventDefault();
+							});
+							$('#register-form-link').click(function(e) {
+								$("#register-form").delay(100).fadeIn(100);
+						 		$("#login-form").fadeOut(100);
+								$('#login-form-link').removeClass('active');
+								$(this).addClass('active');
+								e.preventDefault();
+							});
+
+						});
+					</script>
+				
+			</section>
+		</div>
+	</header><!--/#header-->
+
+	<!-- Services
+    ================================================== -->
+	<section id="story">
+		<div class="container">
+			<h2 class="sectionHeading">
+				<h2 class="sectionHeading">
+								Services
+		
+			</h2>
+			<div class="sectionContent">
+				<div class="row hoverEffect">
+					<div class="col-md-4 col-sm-4">
+						<div class="item">
+							<a class="overlay" href="#">
+								<span class="content">
+									<i class="mdi mdi-account-multiple icon"></i>
+									super team
+								</span>
+								<img src="images/story/img-1.jpg" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="item">
+							<a class="overlay" href="#">
+								<span class="content">
+									<i class="mdi mdi-image-filter-center-focus-weak icon"></i>
+									Creativity
+								</span>
+								<img src="images/story/img-2.jpg" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="item">
+							<a class="overlay" href="#">
+								<span class="content">
+									<i class="mdi mdi-airplay icon"></i>
+									Digital
+								</span>
+								<img src="images/story/img-3.jpg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</section><!--/#story-->
+
+	
+    <!-- clients
+    ================================================== -->
+    <section id="services">
+    	<div class="container">
+    		<h2 class="sectionHeading">
+								Our Clients..
+			</h2>
+			<div class="sectionContent">			
+				<div class="fw" layout="row">
+					<div class="col-md-4 col-sm-6 item ">
+						<div layout="row">
+							<div>
+								<img src="images/l1.jpg">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 item ">
+						<div layout="row">
+								<div>
+									<img src="images/l2.jpg">
+								</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 item ">
+						<div layout="row">
+							<div>
+								<img src="images/l3.jpg">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 item ">
+						<div layout="row">
+							<div>
+								<div>
+								<img src="images/l4.jpg">
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 item ">
+						<div layout="row">
+								<div>
+								<img src="images/l5.jpg">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 item ">
+						<div layout="row">
+								<div>
+								<img src="images/l6.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+    	</div>
+    </section><!--/#services-->
+
+   
+
+    
+    
+    <!-- Footer
+    ================================================== -->
+ <footer>
+ 	<div class="container">
+ 		<div class="row">
+ 			<div class="col-md-12" style="background-color: black; text-align: center;">
+ 				<div class="copyright">
+ 					<p>
+ 						<span>&copy; Copyright 2017 All right reserved. By </span><a href="#">Monika Sharma</a>
+ 					</p>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+	<!-- javascript -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>	
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.97074.js"></script>
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="js/unslider-min.js"></script>
+	<script type="text/javascript" src="js/template.js"></script>
+
+	
+</body>
+</html>
